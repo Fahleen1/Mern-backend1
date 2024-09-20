@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        div a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>User ID <%= post.id %></h3>
+    <div>
+        <h4><%= post.username %></h4>
+        <h5><%= post.content %></h5>
+        <hr>
+    </div>
+    <a href="http://localhost:3000/posts">Back to posts</a>
+</body>
+</html>

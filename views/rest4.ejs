@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        div a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit post</h1>
+    <p>Post id : <%= post.id %></p>
+    <p>Post username : <%= post.username %></p>
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea placeholder="Write post" name="content" cols="30" rows="10"><%= post.content %></textarea>
+        <br><br>
+        <button>Submit</button>
+    </form>
+    <a href="http://localhost:3000/posts">Back to posts</a>
+</body>
+</html>
